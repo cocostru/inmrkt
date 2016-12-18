@@ -42,9 +42,9 @@ b {
     background-size: 100%;
     display: inline-block;
     position: relative;
-    height: 30px;
+    height: 31px;
     width: 64px;
-    top: 1px;
+    top: 2px;
 }
 .moto-wrap {
     font-family: 'nunito', sans-serif;
