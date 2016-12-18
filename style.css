@@ -1,0 +1,92 @@
+body {
+    background: url(owinter.jpg) bottom;
+    font-family: sans-serif;
+    background-size: cover;
+    font-size: 15px;
+    margin: 0;
+}
+h1, div, a {
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+}
+div, a {
+    font-family: 'open sans', sans-serif;
+    text-decoration: none;
+}
+a > span {
+    border-bottom: 1px dashed;
+}
+.body-filter {
+    /*background: linear-gradient(to bottom, rgba(60, 55, 60, .4), rgba(60, 55, 60, .8));*/
+    /*background: linear-gradient(to bottom, rgba(10, 10, 0, .6), rgba(10, 5, 0, .9));*/
+    /*background: rgba(55, 45, 50, .9);*/
+    background: rgba(10, 5, 0, .9);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+.main-title {
+    font-family: 'montserrat', sans-serif;
+    margin: 20vh auto 0;
+    position: relative;
+    font-size: 40px;
+}
+.main-title span {
+    background: url(switch.png) top;
+    background-size: 100%;
+    display: inline-block;
+    position: relative;
+    height: 29px;
+    width: 64px;
+}
+.moto-wrap {
+    margin: 0 0 15vh 5px;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.mail-wrap {
+    margin: 120px auto 0;
+}
+.info-wrap-small {
+    margin-top: 20vh;
+}
+.info-wrap-small .hint-label {
+    font-size: 80%;
+}
+.hint-wrap {
+    left: calc(50% - 170px);
+    text-align: justify;
+    position: absolute;
+    border-radius: 4px;
+    top: 34vh;
+    /*margin-top: -65vh;*/
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    color: #333;
+    opacity: 0;
+}
+.hint-wrap i {
+    text-align: center;
+    display: block;
+    color: #333;
+}
+.hint-label {
+    display: inline-block;
+    padding-left: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    opacity: .4;
+}
+.hint-label:hover + .hint-wrap {
+    -webkit-transition: .5s;
+    opacity: 1;
+}
+.hint-label:hover {
+    -webkit-transition: .3s;
+    opacity: .1;
+}
