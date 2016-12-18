@@ -1,27 +1,27 @@
 body {
-    background: url(owinter.jpg) bottom;
-    font-family: sans-serif;
+    background: url(baikalice.jpg) bottom;
+    font-family: 'nunito', sans-serif;
     background-size: cover;
-    font-size: 15px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 17px;
+    color: #fff;
+    padding: 0;
     margin: 0;
 }
-h1, div, a {
-    font-weight: normal;
-    text-align: center;
+a {
     color: #fff;
-}
-div, a {
-    font-family: 'open sans', sans-serif;
     text-decoration: none;
 }
 a > span {
     border-bottom: 1px dashed;
 }
+b {
+    font-weight: 600;
+    font-size: 120%;
+}
 .body-filter {
-    /*background: linear-gradient(to bottom, rgba(60, 55, 60, .4), rgba(60, 55, 60, .8));*/
-    /*background: linear-gradient(to bottom, rgba(10, 10, 0, .6), rgba(10, 5, 0, .9));*/
-    /*background: rgba(55, 45, 50, .9);*/
-    background: rgba(10, 5, 0, .9);
+    background: rgba(50, 45, 50, .8);
     position: fixed;
     height: 100%;
     width: 100%;
@@ -30,61 +30,62 @@ a > span {
     top: 0;
 }
 .main-title {
-    font-family: 'montserrat', sans-serif;
+    font-family: 'josefin sans', 'nunito', sans-serif;
     margin: 20vh auto 0;
     position: relative;
-    font-size: 40px;
+    font-size: 39px;
 }
 .main-title span {
     background: url(switch.png) top;
     background-size: 100%;
     display: inline-block;
     position: relative;
-    height: 29px;
+    height: 30px;
     width: 64px;
+    top: 1px;
 }
 .moto-wrap {
+    font-family: 'nunito', sans-serif;
     margin: 0 0 15vh 5px;
-    letter-spacing: 1px;
-    font-size: 17px;
+    font-size: 18px;
 }
 .mail-wrap {
-    margin: 120px auto 0;
+    margin: 16vh auto 0;
 }
 .info-wrap-small {
     margin-top: 20vh;
 }
-.info-wrap-small .hint-label {
-    font-size: 80%;
-}
 .hint-wrap {
-    left: calc(50% - 170px);
+    left: calc(50% - 200px);
     text-align: justify;
     position: absolute;
     border-radius: 4px;
-    top: 34vh;
-    /*margin-top: -65vh;*/
+    text-shadow: none;
+    font-weight: 400;
     background: #fff;
+    font-size: 16px;
     padding: 20px;
-    width: 300px;
-    color: #333;
+    width: 360px;
+    color: #555;
+    z-index: -1;
     opacity: 0;
+    top: 35vh;
 }
-.hint-wrap i {
+.hint-wrap span {
     text-align: center;
     display: block;
-    color: #333;
+    color: #555;
 }
 .hint-label {
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 20px;
     cursor: pointer;
     margin: 0 auto;
-    opacity: .4;
 }
 .hint-label:hover + .hint-wrap {
-    -webkit-transition: .5s;
+    -webkit-transition: .3s;
     opacity: 1;
+    z-index: 1;
 }
 .hint-label:hover {
     -webkit-transition: .3s;
