@@ -35,16 +35,15 @@ b {
     margin: 20vh auto 0;
     position: relative;
     font-weight: 300;
-    font-size: 39px;
+    font-size: 40px;
 }
 .main-title span {
     background: url(switch.png) top;
     background-size: 100%;
     display: inline-block;
     position: relative;
-    height: 30px;
+    height: 29px;
     width: 64px;
-    top: 1px;
 }
 .moto-wrap {
     font-family: 'nunito', sans-serif;
