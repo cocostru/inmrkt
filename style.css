@@ -38,12 +38,13 @@ b {
     font-size: 40px;
 }
 .main-title span {
-    background: url(switch.png) top;
+    background: url(switch.png) top no-repeat;
     background-size: 100%;
     display: inline-block;
     position: relative;
-    height: 29px;
+    height: 30px;
     width: 64px;
+    top: 1px;
 }
 .moto-wrap {
     font-family: 'nunito', sans-serif;
