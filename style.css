@@ -1,6 +1,5 @@
 html {
-    background: url(baikalice.jpg) bottom;
-    height: 100%;
+    min-height: 100%;
 }
 body {
     font-family: 'nunito', sans-serif;
@@ -22,6 +21,15 @@ a > span {
 b {
     font-weight: 600;
     font-size: 120%;
+}
+.bg-filter {
+    background: url(baikalice.jpg) bottom;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    left: 0;
+    top: 0;
 }
 .body-filter {
     /*background: linear-gradient(to right, rgba(255,255,255,.4) 25%, rgba(50, 45, 50, .8) 25%, rgba(50, 45, 50, .8) 75%, rgba(255,255,255,.4) 75%);*/
@@ -95,4 +103,22 @@ b {
 .hint-label:hover {
     -webkit-transition: .3s;
     opacity: .1;
+}
+
+@media only screen
+and (min-device-width : 0)
+and (max-device-width : 1024px)
+and (orientation : landscape), only screen
+and (min-device-width : 0)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    .main-title {
+        margin: 5vh auto 0;
+    }
+    .hint-wrap {
+        top: 5vh;
+        width: 260px;
+        left: calc(50% - 150px);
+        border-radius: 0;
+    }
 }
