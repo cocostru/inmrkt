@@ -3,7 +3,6 @@ html {
 }
 body {
     font-family: 'nunito', sans-serif;
-    background-size: cover;
     text-align: center;
     font-weight: 200;
     font-size: 17px;
@@ -24,6 +23,7 @@ b {
 }
 .bg-filter {
     background: url(baikalice.jpg) bottom;
+    background-size: cover;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -112,8 +112,19 @@ and (orientation : landscape), only screen
 and (min-device-width : 0)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
+    body {
+        font-size: 34px;
+    }
     .main-title {
-        margin: 5vh auto 0;
+        margin: 10vh auto 0;
+        font-size: 80px;
+    }
+    .main-title span {
+        height: 57px;
+        width: 127px;
+    }
+    .moto-wrap {
+        font-size: 36px;
     }
     .hint-wrap {
         top: 5vh;
