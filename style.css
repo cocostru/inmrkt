@@ -127,9 +127,9 @@ and (orientation : portrait) {
         font-size: 36px;
     }
     .hint-wrap {
-        top: 5vh;
-        width: 260px;
-        left: calc(50% - 150px);
-        border-radius: 0;
+        left: calc(50% - 320px);
+        font-size: 32px;
+        width: 600px;
+        top: 28vh;
     }
 }
