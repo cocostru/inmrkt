@@ -72,7 +72,7 @@ b {
     left: calc(50% - 200px);
     text-align: justify;
     position: absolute;
-    border-radius: 4px;
+    border-radius: 10px;
     text-shadow: none;
     font-weight: 400;
     background: #fff;
@@ -128,7 +128,9 @@ and (orientation : portrait) {
     }
     .hint-wrap {
         left: calc(50% - 320px);
+        border-radius: 20px;
         font-size: 32px;
+        padding: 30px;
         width: 600px;
         top: 28vh;
     }
