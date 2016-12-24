@@ -134,14 +134,17 @@ and (orientation : portrait) {
         font-size: 34px;
     }
     .hint-wrap {
-        left: calc(50% - 380px);
+        left: calc(50% - 360px);
         border-radius: 20px;
         font-size: 32px;
         padding: 30px;
-        width: 700px;
+        width: 680px;
         top: 28vh;
     }
-    .hint-wrap br:first-of-type {
+    .hint-wrap br {
         display: none;
+    }
+    .hint-wrap br:last-of-type {
+        display: block;;
     }
 }
