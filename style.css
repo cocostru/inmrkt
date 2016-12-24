@@ -141,4 +141,7 @@ and (orientation : portrait) {
         width: 700px;
         top: 28vh;
     }
+    .hint-wrap br:first-of-type {
+        display: none;
+    }
 }
