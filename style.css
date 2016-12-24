@@ -134,11 +134,11 @@ and (orientation : portrait) {
         font-size: 34px;
     }
     .hint-wrap {
-        left: calc(50% - 320px);
+        left: calc(50% - 360px);
         border-radius: 20px;
         font-size: 32px;
         padding: 30px;
-        width: 600px;
+        width: 680px;
         top: 28vh;
     }
 }
