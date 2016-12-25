@@ -16,7 +16,6 @@
     </head>
 
     <body>
-        <!-- Photo by Danil Korzhanov -->
         <div class="bg-filter"></div>
         <div class="body-filter"></div>
         <div class="main-wrap">
@@ -30,16 +29,38 @@
             </div>
 
             <div class="info-wrap-small">
-                <div class="hint-label"><small>Can not access your project ?</small></div>
+                <div class="hint-label"><small>Cannot access your project?</small></div>
                 <div class="hint-wrap">
                     Whether you cannot get access to your project.<br/>
                     Or it seems to be removed / archieved.
                     Should you have any other kind of questions.
-                    And to<br/>request for a specific information.<br/><br/>
-                    Just write to the mailbox below.<br/>
-                    &darr;
+                    And<br/>to request for a specific information.<br/><br/>
+                    Just write to the mailbox below.
                 </div>
             </div>
         </div>
     </body>
+
+    <script>
+        var hintlab = document.querySelector('.hint-label'),
+            hint = document.querySelector('.hint-wrap'),
+            infos = document.querySelectorAll('.info-wrap');
+
+        hintlab.addEventListener('mouseover', function () {
+            hint.classList.add('m');
+            infos.forEach(function(item){
+                item.classList.remove('m');
+                item.classList.add('o');
+            });
+        });
+
+        hintlab.addEventListener('mouseleave', function () {
+            hint.classList.remove('m');
+            infos.forEach(function(item){
+                item.classList.remove('o');
+                item.classList.add('m');
+            });
+        });
+    </script>
+
 </html>
