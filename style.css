@@ -156,7 +156,7 @@ and (orientation : portrait) {
     .hint-wrap {
         left: calc(50% - 380px);
         border-radius: 20px;
-        border: 2px solid #fff;
+        border: 3px solid #fff;
         font-weight: 400;
         font-size: 32px;
         padding: 30px;
@@ -176,7 +176,8 @@ and (min-device-width : 0)
 and (max-device-width : 1024px)
 and (orientation : landscape) {
     .hint-wrap {
-        font-size: 30px;
+        font-size: 26px;
+        padding: 20px;
         top: 36vh;
     }
 }
