@@ -14,12 +14,15 @@ a, a:hover, a:focus {
     color: #fff;
     text-decoration: none;
 }
-a > span {
-    border-bottom: 1px dashed;
-}
+/*a > span {
+    border-bottom: 1px dotted;
+}*/
 b {
     font-weight: 400;
     font-size: 120%;
+}
+.mail-wrap b {
+    font-weight: 200;
 }
 .bg-filter {
     background: url(forfog.jpg) bottom;
@@ -100,7 +103,7 @@ b {
     color: #fff;
     z-index: -1;
     opacity: 0;
-    top: 38.5vh;
+    top: 38vh;
 }
 .hint-wrap.m {
     -webkit-transition: .3s;
