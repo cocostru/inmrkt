@@ -21,9 +21,11 @@
         <div class="main-wrap">
             <h1 class="main-title"><span></span>INMRKT.</h1>
             <div class="moto-wrap">Custom web-development</div>
-            <div class="info-wrap">your project subdomain name is same</div>
             <!-- <div class="info-wrap"><small>имя вашего проекта осталось тем же</small></div><br/> -->
-            <div class="info-wrap"> &nbsp; ●●● <b>.inmrkt.ml</b></div>
+            <div class="info-wrap">
+                your project subdomain name is same<br/>
+                &nbsp; ●●● <b>.inmrkt.ml</b>
+            </div>
             <div class="mail-wrap">
                 <a href="mailto:info@inmrkt.ml?subject=Informational support. INMRKT" target="_blank">
                     &#9998; <span><b>info@inmrkt.ml</b></span>
@@ -46,31 +48,25 @@
     <script>
         var hintlab = document.querySelector('.hint-label'),
             hint = document.querySelector('.hint-wrap'),
-            infos = document.querySelectorAll('.info-wrap');
+            info = document.querySelector('.info-wrap');
 
         hintlab.addEventListener('mouseover', function () {
             hint.classList.add('m');
-            infos.forEach(function(item){
-                item.classList.remove('m');
-                item.classList.add('o');
-            });
+            info.classList.remove('m');
+            info.classList.add('o');
         });
 
         hintlab.addEventListener('mouseleave', function () {
             hint.classList.remove('m');
-            infos.forEach(function(item){
-                item.classList.remove('o');
-                item.classList.add('m');
-            });
+            info.classList.remove('o');
+            info.classList.add('m');
         });
 
         document.addEventListener('touchstart', function (e) {
             if (e.target === hintlab) {
                 hint.classList.remove('m');
-                infos.forEach(function(item){
-                    item.classList.remove('o');
-                    item.classList.add('m');
-                });
+                info.classList.remove('o');
+                info.classList.add('m');
             }
         });
     </script>
