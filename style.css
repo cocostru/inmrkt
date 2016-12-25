@@ -134,6 +134,9 @@ and (orientation : portrait) {
         font-size: 37px;
         font-weight: 600;
     }
+    .mail-wrap b {
+        font-weight: 600;
+    }
     .main-title {
         margin: 10vh auto 0;
         font-size: 80px;
@@ -144,6 +147,8 @@ and (orientation : portrait) {
     }
     .moto-wrap {
         font-size: 34px;
+        font-weight: 400;
+        letter-spacing: 0;
     }
     .hint-label {
         font-size: 31px;
