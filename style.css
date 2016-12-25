@@ -149,6 +149,8 @@ and (orientation : portrait) {
     .hint-wrap {
         left: calc(50% - 360px);
         border-radius: 20px;
+        border: 2px solid #fff;
+        font-weight: 400;
         font-size: 32px;
         padding: 30px;
         width: 680px;
