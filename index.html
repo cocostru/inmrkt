@@ -62,12 +62,14 @@
             });
         });
 
-        document.addEventListener('click', function () {
-            hint.classList.remove('m');
-            infos.forEach(function(item){
-                item.classList.remove('o');
-                item.classList.add('m');
-            });
+        document.addEventListener('click', function (e) {
+            if (e.target === hintlab) {
+                hint.classList.remove('m');
+                infos.forEach(function(item){
+                    item.classList.remove('o');
+                    item.classList.add('m');
+                });
+            }
         });
     </script>
 
