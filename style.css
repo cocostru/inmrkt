@@ -116,11 +116,8 @@ b {
     padding-left: 20px;
     cursor: pointer;
     margin: 0 auto;
+    font-size: 14px;
 }
-/*.hint-label:hover {
-    -webkit-transition: .3s;
-    opacity: .1;
-}*/
 
 @media only screen
 and (min-device-width : 0)
@@ -145,6 +142,9 @@ and (orientation : portrait) {
     }
     .moto-wrap {
         font-size: 34px;
+    }
+    .hint-label {
+        font-size: 31px;
     }
     .hint-wrap {
         left: calc(50% - 360px);
