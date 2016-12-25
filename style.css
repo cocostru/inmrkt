@@ -128,9 +128,11 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
     body {
         font-size: 34px;
+        font-weight: 400;
     }
     b {
         font-size: 37px;
+        font-weight: 600;
     }
     .main-title {
         margin: 10vh auto 0;
@@ -150,7 +152,6 @@ and (orientation : portrait) {
         left: calc(50% - 360px);
         border-radius: 20px;
         border: 2px solid #fff;
-        font-weight: 400;
         font-size: 32px;
         padding: 30px;
         width: 680px;
