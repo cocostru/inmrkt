@@ -81,10 +81,6 @@ b {
 .info-wrap.o {
     opacity: 0;
 }
-.info-wrap.m {
-    -webkit-transition: .3s;
-    opacity: 1;
-}
 .info-wrap-small {
     margin-top: 20vh;
 }

@@ -52,22 +52,18 @@
 
         hintlab.addEventListener('mouseover', function () {
             hint.classList.add('m');
-            info.classList.remove('m');
             info.classList.add('o');
         });
 
         hintlab.addEventListener('mouseleave', function () {
-            // console.log('wtf');
             hint.classList.remove('m');
             info.classList.remove('o');
-            info.classList.add('m');
         });
 
         document.addEventListener('touchend', function (e) {
             if (e.target != hintlab) {
                 hint.classList.remove('m');
                 info.classList.remove('o');
-                info.classList.add('m');
             }
         });
     </script>
