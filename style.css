@@ -170,3 +170,13 @@ and (orientation : portrait) {
         display: block;;
     }
 }
+
+@media only screen
+and (min-device-width : 0)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    .hint-wrap {
+        font-size: 30px;
+        top: 36vh;
+    }
+}
