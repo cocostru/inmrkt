@@ -10,6 +10,7 @@
 
         <link href="style.css" rel="stylesheet" type="text/css"/>
 
+
         <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 
         <title>inmrkt.</title>
@@ -38,48 +39,11 @@
                     Whether you cannot get access to your project<br/>
                     or it seems to be removed / archieved.
                     Should you have any other kind of questions.
-                    And<br/>to request for a specific information.<br/><br/>
+                    And<br/> to request for a specific information.<br/><br/>
                     Just write to the mailbox below.
                 </div>
             </div>
         </div>
     </body>
-
-    <script>
-        var hintlab = document.querySelector('.hint-label'),
-            hint = document.querySelector('.hint-wrap'),
-            info = document.querySelector('.info-wrap'),
-            mql = window.matchMedia( 'only screen and (min-device-width : 0) and (max-device-width : 1024px) and (orientation : landscape)' ),
-            mqp = window.matchMedia( 'only screen and (min-device-width : 0) and (max-device-width : 1024px) and (orientation : portrait)' );
-
-        if (!mql.matches && !mqp.matches) {
-
-            hintlab.addEventListener('mouseover', function () {
-                hint.classList.add('m');
-                info.classList.add('o');
-            });
-
-            hintlab.addEventListener('mouseleave', function () {
-                hint.classList.remove('m');
-                info.classList.remove('o');
-            });
-
-        } else {
-
-            hintlab.addEventListener('touchend', function () {
-                hint.classList.add('m');
-                info.classList.add('o');
-            });
-
-            document.addEventListener('touchend', function (e) {
-                if (e.target != hintlab) {
-                    hint.classList.remove('m');
-                    info.classList.remove('o');
-                }
-            });
-
-        }
-
-    </script>
-
+    <script src="scripts.js" type="text/javascript"></script>
 </html>
