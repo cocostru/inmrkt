@@ -154,12 +154,13 @@ and (orientation : portrait) {
         font-size: 31px;
     }
     .hint-wrap {
-        left: calc(50% - 360px);
+        left: calc(50% - 380px);
         border-radius: 20px;
         border: 2px solid #fff;
+        font-weight: 400;
         font-size: 32px;
         padding: 30px;
-        width: 680px;
+        width: 720px;
         top: 28vh;
     }
     .hint-wrap br {
