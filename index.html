@@ -57,13 +57,14 @@
         });
 
         hintlab.addEventListener('mouseleave', function () {
+            // console.log('wtf');
             hint.classList.remove('m');
             info.classList.remove('o');
             info.classList.add('m');
         });
 
         document.addEventListener('touchend', function (e) {
-            if (e.target === hintlab) {
+            if (e.target != hintlab) {
                 hint.classList.remove('m');
                 info.classList.remove('o');
                 info.classList.add('m');
