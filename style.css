@@ -166,8 +166,8 @@ and (orientation : portrait) {
     .hint-wrap br {
         display: none;
     }
-    .hint-wrap br:last-of-type {
-        display: block;;
+    .hint-wrap br:nth-of-type(3), .hint-wrap br:nth-of-type(4) {
+        display: block;
     }
 }
 
