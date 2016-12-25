@@ -148,7 +148,7 @@ and (orientation : portrait) {
     .moto-wrap {
         font-size: 34px;
         font-weight: 400;
-        letter-spacing: 0;
+        /*letter-spacing: 0;*/
     }
     .hint-label {
         font-size: 31px;
