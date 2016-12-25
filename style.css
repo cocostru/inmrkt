@@ -72,6 +72,9 @@ b {
 .mail-wrap {
     margin: 16vh auto 0;
 }
+.info-wrap {
+    opacity: 1;
+}
 .info-wrap.o {
     opacity: 0;
 }
@@ -99,6 +102,11 @@ b {
     opacity: 0;
     top: 38.5vh;
 }
+.hint-wrap.m {
+    -webkit-transition: .3s;
+    opacity: 1;
+    z-index: 1;
+}
 .hint-wrap span {
     text-align: center;
     display: block;
@@ -109,11 +117,6 @@ b {
     padding-left: 20px;
     cursor: pointer;
     margin: 0 auto;
-}
-.hint-wrap.m {
-    -webkit-transition: .3s;
-    opacity: 1;
-    z-index: 1;
 }
 .hint-label:hover {
     -webkit-transition: .3s;
