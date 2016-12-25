@@ -19,7 +19,7 @@ a, a:hover, a:focus {
 }*/
 b {
     font-weight: 400;
-    font-size: 120%;
+    font-size: 20px;
 }
 .mail-wrap b {
     font-weight: 200;
@@ -135,6 +135,9 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
     body {
         font-size: 34px;
+    }
+    b {
+        font-size: 37px;
     }
     .main-title {
         margin: 10vh auto 0;
