@@ -177,6 +177,7 @@ and (orientation : portrait) {
     }
     .hint-label {
         font-size: 31px;
+        padding: 20px;
     }
     .hint-wrap {
         left: calc(50% - 380px);
