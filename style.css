@@ -181,7 +181,7 @@ and (orientation : portrait) {
         font-size: 32px;
         padding: 30px;
         width: 720px;
-        top: 32vh;
+        top: 30vh;
     }
     .hint-wrap br {
         display: none;
@@ -198,6 +198,6 @@ and (orientation : landscape) {
     .hint-wrap {
         font-size: 20px;
         padding: 20px;
-        top: 50vh;
+        top: 48vh;
     }
 }
