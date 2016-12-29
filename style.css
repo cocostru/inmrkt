@@ -1,33 +1,54 @@
 html {
-    min-height: 100%;
+    overflow: hidden;
+    height: 100%;
 }
 body {
     font-family: 'nunito', sans-serif;
     text-align: center;
+    min-height: 100%;
     font-weight: 200;
     font-size: 17px;
+    height: auto;
     color: #fff;
     padding: 0;
     margin: 0;
 }
 a, a:hover, a:focus {
-    color: #fff;
     text-decoration: none;
+    color: #fff;
 }
-/*a > span {
-    border-bottom: 1px dotted;
-}*/
 b {
     font-weight: 400;
     font-size: 20px;
 }
-.mail-wrap b {
-    font-weight: 200;
+::-webkit-scrollbar {
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
+}
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 4px rgba(255,255,255,.05);
+    border: 10px solid transparent;
+    border-radius: 12px;
+    opacity: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+	box-shadow: inset 0 0 0 6px rgba(255,255,255,.1);
+    border: 8px solid transparent;
+}
+.main-wrap {
+    position: relative;
+    overflow-y: scroll;
+    padding-left: 24px;
+    min-height: 100%;
+    height: 100%;
 }
 .bg-filter {
     background: url(forfog.jpg) bottom;
     background-color: #333;
-    /*filter: brightness(1.5);*/
     background-size: cover;
     position: fixed;
     height: 100%;
@@ -37,7 +58,6 @@ b {
     top: 0;
 }
 .body-filter {
-    /*background: linear-gradient(to right, rgba(255,255,255,.4) 25%, rgba(50, 45, 50, .8) 25%, rgba(50, 45, 50, .8) 75%, rgba(255,255,255,.4) 75%);*/
     background: rgba(45, 45, 45, .7);
     position: fixed;
     height: 100%;
@@ -47,24 +67,21 @@ b {
     top: 0;
 }
 .main-title {
-    /*font-family: 'josefin sans', 'nunito', sans-serif;*/
     font-family: 'nunito', sans-serif;
+    vertical-align: bottom;
     margin: 20vh auto 0;
     position: relative;
     font-weight: 200;
     font-size: 42px;
-    vertical-align: bottom;
 }
 .main-title span {
     background: url(switch-ok.svg) top no-repeat;
-    /*filter: invert();*/
     background-size: 100%;
     display: inline-block;
+    margin: 1px 3px -1px;
     position: relative;
     height: 32px;
     width: 54px;
-    margin: 1px 3px -1px;
-    /*top: -12px;*/
 }
 .moto-wrap {
     font-family: 'nunito', sans-serif;
@@ -75,6 +92,9 @@ b {
 .mail-wrap {
     margin: 16vh auto 0;
 }
+.mail-wrap b {
+    font-weight: 200;
+}
 .info-wrap {
     opacity: 1;
 }
@@ -82,24 +102,24 @@ b {
     opacity: 0;
 }
 .info-wrap-small {
-    margin-top: 20vh;
+    margin: 18vh auto 14vh;
 }
 .hint-wrap {
-    left: calc(50% - 200px);
-    /*text-align: justify;*/
-    position: absolute;
-    border-radius: 10px;
-    text-shadow: none;
-    font-weight: 200;
-    background: rgba(50,50,50,.2);
     border: 2px solid rgba(255,255,255,1);
+    background: rgba(50,50,50,.2);
+    left: calc(50% - 200px);
+    border-radius: 10px;
+    position: absolute;
+    text-shadow: none;
+    margin-top: -60px;
+    margin-left: 12px;
+    font-weight: 200;
     font-size: 17px;
     padding: 20px;
     width: 360px;
     color: #fff;
     z-index: -1;
     opacity: 0;
-    top: 38vh;
 }
 .hint-wrap.m {
     -webkit-transition: .3s;
@@ -115,8 +135,8 @@ b {
     display: inline-block;
     padding-left: 20px;
     cursor: pointer;
-    margin: 0 auto;
     font-size: 14px;
+    margin: 0 auto;
 }
 
 @media only screen
@@ -127,12 +147,12 @@ and (min-device-width : 0)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
     body {
-        font-size: 34px;
         font-weight: 400;
+        font-size: 34px;
     }
     b {
-        font-size: 37px;
         font-weight: 600;
+        font-size: 37px;
     }
     .mail-wrap b {
         font-weight: 600;
@@ -146,22 +166,22 @@ and (orientation : portrait) {
         width: 100px;
     }
     .moto-wrap {
-        font-size: 34px;
-        font-weight: 400;
         letter-spacing: .1;
+        font-weight: 400;
+        font-size: 34px;
     }
     .hint-label {
         font-size: 31px;
     }
     .hint-wrap {
         left: calc(50% - 380px);
-        border-radius: 20px;
         border: 3px solid #fff;
+        border-radius: 20px;
         font-weight: 400;
         font-size: 32px;
         padding: 30px;
         width: 720px;
-        top: 28vh;
+        top: 32vh;
     }
     .hint-wrap br {
         display: none;
@@ -178,6 +198,6 @@ and (orientation : landscape) {
     .hint-wrap {
         font-size: 20px;
         padding: 20px;
-        top: 36vh;
+        top: 50vh;
     }
 }
